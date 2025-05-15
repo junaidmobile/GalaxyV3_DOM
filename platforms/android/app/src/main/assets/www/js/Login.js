@@ -21,6 +21,29 @@ var GHAExportFlightserviceURL = 'https://galaxyuat.kalelogistics.com/GalaxyV3DOM
 //var GHAImportFlightserviceURL = 'https://adaniuat.kalelogistics.com/GHAAdaniIntlUATNMINew/services/hhtImpservices.asmx/';
 //var GHAExportFlightserviceURL = 'https://adaniuat.kalelogistics.com/GHAAdaniIntlUATNMINew/services/hhtExpservices.asmx/';
 
+
+// Adani LKO
+//var GHAImportFlightserviceURL = 'https://adaniuat.kalelogistics.com/GalaxyV3DOMLKO/services/hhtImpservices.asmx/';
+//var GHAExportFlightserviceURL = 'https://adaniuat.kalelogistics.com/GalaxyV3DOMLKO/services/hhtExpservices.asmx/';
+
+//MA UAT INTL
+//var GHAImportFlightserviceURL = 'https://galaxyuat.kalelogistics.com/GalaxyV3MAB/services/hhtIMPservices.asmx/';
+//var GHAExportFlightserviceURL = 'https://galaxyuat.kalelogistics.com/GalaxyV3MAB/services/hhtExpservices.asmx/';
+
+//AZM UAT INTL
+//var GHAImportFlightserviceURL = 'https://galaxyuat.kalelogistics.com/AZMARV3UAT/services/hhtImpservices.asmx/';
+//var GHAExportFlightserviceURL = 'https://galaxyuat.kalelogistics.com/AZMARV3UAT/services/hhtExpservices.asmx/';
+
+//DEMO UAT INTL
+//var GHAImportFlightserviceURL = 'https://galaxydemo.kalelogistics.com/GalaxyV3INTL/services/hhtImpservices.asmx/';
+//var GHAExportFlightserviceURL = 'https://galaxydemo.kalelogistics.com/GalaxyV3INTL/services/hhtExpservices.asmx/';
+
+
+//DEMO UAT DOM
+//var GHAImportFlightserviceURL = 'https://galaxydemo.kalelogistics.com/GalaxyV3DOM/services/hhtImpservices.asmx/';
+//var GHAExportFlightserviceURL = 'https://galaxydemo.kalelogistics.com/GalaxyV3DOM/services/hhtExpservices.asmx/';
+
+
 var deviceUUID;
 var encryptedUUID;
 document.addEventListener("deviceready", SetRememberLogin, false);
@@ -167,7 +190,7 @@ function ProcessLogin() {
                         window.localStorage.setItem("GHAExportFlightserviceURL", GHAExportFlightserviceURL);
                         window.localStorage.setItem("AppVersion", $('#lblAppVerion').text());
                         //window.localStorage.setItem("CargoWorksServiceURL", CargoWorksServiceURL);
-                        
+
 
                         window.location = "GalaxyHome.html";
                     });

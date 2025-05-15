@@ -142,7 +142,7 @@ function ExportAirside_Search_V3_Onblur() {
 
     // var MAWBNo = $('#txtAWBNo').val();
 
-    var InputXML = '<Root><BarCode>' + gatePassComing + '</BarCode><AirportCity>' + AirportCity + '</AirportCity><UserId>' + UserID + '</UserId></Root>';
+    var InputXML = '<Root><BarCode>' + flSeqID + '</BarCode><AirportCity>' + AirportCity + '</AirportCity><UserId>' + UserID + '</UserId></Root>';
 
     if (errmsg == "" && connectionStatus == "online") {
         $.ajax({
@@ -176,7 +176,7 @@ function ExportAirside_Search_V3_Onblur() {
                     SignAutoUpload = $(this).find('SignAutoUpload').text();
                     if (Status == 'E') {
                         //  $.alert(StrMessage).css('color', 'red');
-                        $("#errorMsg").text(StrMessage).css({ 'color': 'red' });
+                        $("#spnErrormsg").text(StrMessage).css({ 'color': 'red' });
                         // clearALL();
                         return true;
                     }

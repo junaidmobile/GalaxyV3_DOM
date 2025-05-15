@@ -474,7 +474,7 @@ document.getElementById('undo').addEventListener('click', function () {
 signaturePad.fromData(data, { clear: false });
 
 function RecordGoodsDelivery_PDA() {
-
+   
     if ($('#txtGatePassScanNo').val() == '') {
         $("#spnMsg").text('Please enter AWB No./WDO No.').css({ 'color': 'red' });
         $('#divVCTDetail').empty();
@@ -542,7 +542,7 @@ function RecordGoodsDelivery_PDA() {
                 var xmlDoc = $.parseXML(response);
                 //var str = response.d;
                 // $.alert(response);
-                $(xmlDoc).find('Table1').each(function (index) {
+                $(xmlDoc).find('Table').each(function (index) {
                     var Status = $(this).find('Status').text();
 
                     if (Status == 'E') {

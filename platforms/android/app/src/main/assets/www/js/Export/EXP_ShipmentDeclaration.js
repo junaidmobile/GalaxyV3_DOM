@@ -110,8 +110,8 @@ var WtUOM;
 var filteredArrforno = [];
 $(function () {
 
-
-
+     
+    $('#txtOrigin').val(AirportCity);
     GetButtonRights_v3();
 
     var formattedDate = new Date();

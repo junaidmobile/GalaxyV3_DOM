@@ -370,7 +370,7 @@ function GetVCTDetailsForTDGAcceptance(clearMsg, overwriteMsg) {
             error: function (msg) {
                 $("body").mLoading('hide');
                 var r = jQuery.parseJSON(msg.responseText);
-                // $.alert(r.Message);
+                alert("Message: " + r.Message);
             }
         });
     }

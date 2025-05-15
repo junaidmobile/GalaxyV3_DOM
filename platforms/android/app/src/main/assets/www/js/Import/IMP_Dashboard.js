@@ -184,80 +184,115 @@ function GetMenuRolesRights() {
                     IsEnable = $(this).find('IsEnable').text();
 
 
-                    if (index == 0) {
-                        if (ControlId == 'divULDAcceptance' && IsEnable == 'Y') {
-                            $('#divULDAcceptance').show();
-                        } else {
-                            $('#divULDAcceptance').hide();
-                        }
+                    if (ControlId == 'divULDAcceptance' && IsEnable == 'Y') {
+                        $('#divULDAcceptance').show();
                     }
 
-                    if (index == 1) {
-                        if (ControlId == 'divFlightCheck' && IsEnable == 'Y') {
-                            $('#divFlightCheck').show();
-                        } else {
-                            $('#divFlightCheck').hide();
-                        }
+                    if (ControlId == 'divFlightCheck' && IsEnable == 'Y') {
+                        $('#divFlightCheck').show();
                     }
 
-
-                    if (index == 2) {
-                        if (ControlId == 'divRecordDamage' && IsEnable == 'Y') {
-                            $('#divRecordDamage').show();
-                        } else {
-                            $('#divRecordDamage').hide();
-                        }
+                    if (ControlId == 'divRecordDamage' && IsEnable == 'Y') {
+                        $('#divRecordDamage').show();
                     }
 
-
-                    if (index == 3) {
-                        if (ControlId == 'divSplitGroup' && IsEnable == 'Y') {
-                            $('#divSplitGroup').show();
-                        } else {
-                            $('#divSplitGroup').hide();
-                        }
+                    if (ControlId == 'divSplitGroup' && IsEnable == 'Y') {
+                        $('#divSplitGroup').show();
                     }
 
-                    if (index == 4) {
-                        if (ControlId == 'divWDORetrieval' && IsEnable == 'Y') {
-                            $('#divWDORetrieval').show();
-                        } else {
-                            $('#divWDORetrieval').hide();
-                        }
+                    if (ControlId == 'divWDORetrieval' && IsEnable == 'Y') {
+                        $('#divWDORetrieval').show();
                     }
 
-                    if (index == 5) {
-                        if (ControlId == 'divWDORelease' && IsEnable == 'Y') {
-                            $('#divWDORelease').show();
-                        } else {
-                            $('#divWDORelease').hide();
-                        }
+                    if (ControlId == 'divWDORelease' && IsEnable == 'Y') {
+                        $('#divWDORelease').show();
                     }
 
-
-                    if (index == 6) {
-                        if (ControlId == 'divImportQuery' && IsEnable == 'Y') {
-                            $('#divImportQuery').show();
-                        } else {
-                            $('#divImportQuery').hide();
-                        }
+                    if (ControlId == 'divImportQuery' && IsEnable == 'Y') {
+                        $('#divImportQuery').show();
                     }
 
-                    if (index == 7) {
-                        if (ControlId == 'divBinning' && IsEnable == 'Y') {
-                            $('#divBinning').show();
-                        } else {
-                            $('#divBinning').hide();
-                        }
+                    if (ControlId == 'divBinning' && IsEnable == 'Y') {
+                        $('#divBinning').show();
+                    }
+                    if (ControlId == 'divTSP' && IsEnable == 'Y') {
+                        $('#divTSP').show();
                     }
 
-                    if (index == 8) {
-                        if (ControlId == 'divTSP' && IsEnable == 'Y') {
-                            $('#divTSP').show();
-                        } else {
-                            $('#divTSP').hide();
-                        }
-                    }
+                    //if (index == 0) {
+                    //    if (ControlId == 'divULDAcceptance' && IsEnable == 'Y') {
+                    //        $('#divULDAcceptance').show();
+                    //    } else {
+                    //        $('#divULDAcceptance').hide();
+                    //    }
+                    //}
+
+                    //if (index == 1) {
+                    //    if (ControlId == 'divFlightCheck' && IsEnable == 'Y') {
+                    //        $('#divFlightCheck').show();
+                    //    } else {
+                    //        $('#divFlightCheck').hide();
+                    //    }
+                    //}
+
+
+                    //if (index == 2) {
+                    //    if (ControlId == 'divRecordDamage' && IsEnable == 'Y') {
+                    //        $('#divRecordDamage').show();
+                    //    } else {
+                    //        $('#divRecordDamage').hide();
+                    //    }
+                    //}
+
+
+                    //if (index == 3) {
+                    //    if (ControlId == 'divSplitGroup' && IsEnable == 'Y') {
+                    //        $('#divSplitGroup').show();
+                    //    } else {
+                    //        $('#divSplitGroup').hide();
+                    //    }
+                    //}
+
+                    //if (index == 4) {
+                    //    if (ControlId == 'divWDORetrieval' && IsEnable == 'Y') {
+                    //        $('#divWDORetrieval').show();
+                    //    } else {
+                    //        $('#divWDORetrieval').hide();
+                    //    }
+                    //}
+
+                    //if (index == 5) {
+                    //    if (ControlId == 'divWDORelease' && IsEnable == 'Y') {
+                    //        $('#divWDORelease').show();
+                    //    } else {
+                    //        $('#divWDORelease').hide();
+                    //    }
+                    //}
+
+
+                    //if (index == 6) {
+                    //    if (ControlId == 'divImportQuery' && IsEnable == 'Y') {
+                    //        $('#divImportQuery').show();
+                    //    } else {
+                    //        $('#divImportQuery').hide();
+                    //    }
+                    //}
+
+                    //if (index == 7) {
+                    //    if (ControlId == 'divBinning' && IsEnable == 'Y') {
+                    //        $('#divBinning').show();
+                    //    } else {
+                    //        $('#divBinning').hide();
+                    //    }
+                    //}
+
+                    //if (index == 8) {
+                    //    if (ControlId == 'divTSP' && IsEnable == 'Y') {
+                    //        $('#divTSP').show();
+                    //    } else {
+                    //        $('#divTSP').hide();
+                    //    }
+                    //}
 
 
                 });

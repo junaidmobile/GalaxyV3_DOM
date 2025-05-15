@@ -153,29 +153,41 @@ function GetMenuRolesRights() {
                     ParentChildId = $(this).find('ParentChildId').text();
                     IsEnable = $(this).find('IsEnable').text();
 
-                    if (index == 0) {
-                        if (ControlId == 'divImportMenu' && IsEnable == 'Y') {
-                            $('#divImportMenu').show();
-                        } else {
-                            $('#divImportMenu').hide();
-                        }
+                    if (ControlId == 'divImportMenu' && IsEnable == 'Y') {
+                        $('#divImportMenu').show();
                     }
 
-                    if (index == 1) {
-                        if (ControlId == 'divExportMenu' && IsEnable == 'Y') {
-                            $('#divExportMenu').show();
-                        } else {
-                            $('#divExportMenu').hide();
-                        }
+                    if (ControlId == 'divExportMenu' && IsEnable == 'Y') {
+                        $('#divExportMenu').show();
                     }
 
-                    if (index == 2) {
-                        if (ControlId == 'divVTMenu' && IsEnable == 'Y') {
-                            $('#divVTMenu').show();
-                        } else {
-                            $('#divVTMenu').hide();
-                        }
+                    if (ControlId == 'divVTMenu' && IsEnable == 'Y') {
+                        $('#divVTMenu').show();
                     }
+
+                    //if (index == 0) {
+                    //    if (ControlId == 'divImportMenu' && IsEnable == 'Y') {
+                    //        $('#divImportMenu').show();
+                    //    } else {
+                    //        $('#divImportMenu').hide();
+                    //    }
+                    //}
+
+                    //if (index == 1) {
+                    //    if (ControlId == 'divExportMenu' && IsEnable == 'Y') {
+                    //        $('#divExportMenu').show();
+                    //    } else {
+                    //        $('#divExportMenu').hide();
+                    //    }
+                    //}
+
+                    //if (index == 2) {
+                    //    if (ControlId == 'divVTMenu' && IsEnable == 'Y') {
+                    //        $('#divVTMenu').show();
+                    //    } else {
+                    //        $('#divVTMenu').hide();
+                    //    }
+                    //}
 
                 });
             },

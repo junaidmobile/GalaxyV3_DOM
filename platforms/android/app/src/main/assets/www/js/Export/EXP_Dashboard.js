@@ -157,8 +157,8 @@ function RedirectPage(pagename) {
     }
     else if (pagename == 'EXP_GenerateBarcode.html')
         window.location.href = pagename;
-   
-    
+
+
 }
 
 function GetMenuRolesRights() {
@@ -204,93 +204,139 @@ function GetMenuRolesRights() {
                     ParentChildId = $(this).find('ParentChildId').text();
                     IsEnable = $(this).find('IsEnable').text();
 
-
-                    if (index == 1) {
-                        if (ControlId == 'divCargoAcceptance' && IsEnable == 'Y') {
-                            $('#divCargoAcceptance').show();
-                        } else {
-                            $('#divCargoAcceptance').hide();
-                        }
+                    if (ControlId == 'divCargoAcceptance' && IsEnable == 'Y') {
+                        $('#divCargoAcceptance').show();
                     }
 
-                    if (index == 3) {
-                        if (ControlId == 'divChangeOfAWB' && IsEnable == 'Y') {
-                            $('#divChangeOfAWB').show();
-                        } else {
-                            $('#divChangeOfAWB').hide();
-                        }
+                    if (ControlId == 'divChangeOfAWB' && IsEnable == 'Y') {
+                        $('#divChangeOfAWB').show();
                     }
 
-                    if (index == 5) {
-                        if (ControlId == 'divChecklist' && IsEnable == 'Y') {
-                            $('#divChecklist').show();
-                        } else {
-                            $('#divChecklist').hide();
-                        }
+                    if (ControlId == 'divChecklist' && IsEnable == 'Y') {
+                        $('#divChecklist').show();
                     }
 
-                    if (index == 2) {
-                        if (ControlId == 'divBinning' && IsEnable == 'Y') {
-                            $('#divBinning').show();
-                        } else {
-                            $('#divBinning').hide();
-                        }
+                    if (ControlId == 'divBinning' && IsEnable == 'Y') {
+                        $('#divBinning').show();
                     }
 
-                    if (index == 10) {
-                        if (ControlId == 'divExportQuery' && IsEnable == 'Y') {
-                            $('#divExportQuery').show();
-                        } else {
-                            $('#divExportQuery').hide();
-                        }
+                    if (ControlId == 'divExportQuery' && IsEnable == 'Y') {
+                        $('#divExportQuery').show();
                     }
 
-                    if (index == 7) {
-                        if (ControlId == 'divGPRelease' && IsEnable == 'Y') {
-                            $('#divGPRelease').show();
-                        } else {
-                            $('#divGPRelease').hide();
-                        }
+                    if (ControlId == 'divGPRelease' && IsEnable == 'Y') {
+                        $('#divGPRelease').show();
                     }
 
-                    if (index == 8) {
-                        if (ControlId == 'divLabelPrint' && IsEnable == 'Y') {
-                            $('#divLabelPrint').show();
-                        } else {
-                            $('#divLabelPrint').hide();
-                        }
+                    if (ControlId == 'divLabelPrint' && IsEnable == 'Y') {
+                        $('#divLabelPrint').show();
                     }
 
-                    if (index == 9) {
-                        if (ControlId == 'divRemoveOffloadShipment' && IsEnable == 'Y') {
-                            $('#divRemoveOffloadShipment').show();
-                        } else {
-                            $('#divRemoveOffloadShipment').hide();
-                        }
+                    if (ControlId == 'divRemoveOffloadShipment' && IsEnable == 'Y') {
+                        $('#divRemoveOffloadShipment').show();
                     }
 
-                    if (index == 0) {
-                        if (ControlId == 'divShipmentDeclaration' && IsEnable == 'Y') {
-                            $('#divShipmentDeclaration').show();
-                        } else {
-                            $('#divShipmentDeclaration').hide();
-                        }
+                    if (ControlId == 'divShipmentDeclaration' && IsEnable == 'Y') {
+                        $('#divShipmentDeclaration').show();
                     }
 
-                    if (index == 4) {
-                        if (ControlId == 'divExpTSP' && IsEnable == 'Y') {
-                            $('#divExpTSP').show();
-                        } else {
-                            $('#divExpTSP').hide();
-                        }
+                    if (ControlId == 'divExpTSP' && IsEnable == 'Y') {
+                        $('#divExpTSP').show();
                     }
-                    if (index == 6) {
-                        if (ControlId == 'divUnitization' && IsEnable == 'Y') {
-                            $('#divUnitization').show();
-                        } else {
-                            $('#divUnitization').hide();
-                        }
+
+                    if (ControlId == 'divUnitization' && IsEnable == 'Y') {
+                        $('#divUnitization').show();
                     }
+                    if (ControlId == 'divCargoAcceptanceINTL' && IsEnable == 'Y') {
+                        $('#divCargoAcceptanceINTL').show();
+                    }
+
+                    //if (index == 1) {
+                    //    if (ControlId == 'divCargoAcceptance' && IsEnable == 'Y') {
+                    //        $('#divCargoAcceptance').show();
+                    //    } else {
+                    //        $('#divCargoAcceptance').hide();
+                    //    }
+                    //}
+
+                    //if (index == 3) {
+                    //    if (ControlId == 'divChangeOfAWB' && IsEnable == 'Y') {
+                    //        $('#divChangeOfAWB').show();
+                    //    } else {
+                    //        $('#divChangeOfAWB').hide();
+                    //    }
+                    //}
+
+                    //if (index == 5) {
+                    //    if (ControlId == 'divChecklist' && IsEnable == 'Y') {
+                    //        $('#divChecklist').show();
+                    //    } else {
+                    //        $('#divChecklist').hide();
+                    //    }
+                    //}
+
+                    //if (index == 2) {
+                    //    if (ControlId == 'divBinning' && IsEnable == 'Y') {
+                    //        $('#divBinning').show();
+                    //    } else {
+                    //        $('#divBinning').hide();
+                    //    }
+                    //}
+
+                    //if (index == 10) {
+                    //    if (ControlId == 'divExportQuery' && IsEnable == 'Y') {
+                    //        $('#divExportQuery').show();
+                    //    } else {
+                    //        $('#divExportQuery').hide();
+                    //    }
+                    //}
+
+                    //if (index == 7) {
+                    //    if (ControlId == 'divGPRelease' && IsEnable == 'Y') {
+                    //        $('#divGPRelease').show();
+                    //    } else {
+                    //        $('#divGPRelease').hide();
+                    //    }
+                    //}
+
+                    //if (index == 8) {
+                    //    if (ControlId == 'divLabelPrint' && IsEnable == 'Y') {
+                    //        $('#divLabelPrint').show();
+                    //    } else {
+                    //        $('#divLabelPrint').hide();
+                    //    }
+                    //}
+
+                    //if (index == 9) {
+                    //    if (ControlId == 'divRemoveOffloadShipment' && IsEnable == 'Y') {
+                    //        $('#divRemoveOffloadShipment').show();
+                    //    } else {
+                    //        $('#divRemoveOffloadShipment').hide();
+                    //    }
+                    //}
+
+                    //if (index == 0) {
+                    //    if (ControlId == 'divShipmentDeclaration' && IsEnable == 'Y') {
+                    //        $('#divShipmentDeclaration').show();
+                    //    } else {
+                    //        $('#divShipmentDeclaration').hide();
+                    //    }
+                    //}
+
+                    //if (index == 4) {
+                    //    if (ControlId == 'divExpTSP' && IsEnable == 'Y') {
+                    //        $('#divExpTSP').show();
+                    //    } else {
+                    //        $('#divExpTSP').hide();
+                    //    }
+                    //}
+                    //if (index == 6) {
+                    //    if (ControlId == 'divUnitization' && IsEnable == 'Y') {
+                    //        $('#divUnitization').show();
+                    //    } else {
+                    //        $('#divUnitization').hide();
+                    //    }
+                    //}
 
                 });
             },
@@ -349,7 +395,7 @@ function baseFn(pagename) {
                 window.location.href = pagename;
             }
         }
-        
+
 
         if (pagename == 'EXP_TSP.html') {
             if (ControlId == 'divExpTSP' && IsEnable == 'Y') {
@@ -394,6 +440,14 @@ function baseFn(pagename) {
             if (ControlId == 'divExportQuery' && IsEnable == 'Y') {
                 localStorage.setItem('_ParentChildId', $(this).find('ParentChildId').text())
                 window.location.href = pagename;
+            }
+        }
+        if (pagename == 'EXP_EuroPalletAcceptance_INTL.html') {
+            if (ControlId == 'divCargoAcceptanceINTL' && IsEnable == 'Y') {
+                localStorage.setItem('_ParentChildId', $(this).find('ParentChildId').text())
+                window.location.href = pagename;
+                localStorage.removeItem('_vctno');
+                localStorage.removeItem('_Door');
             }
         }
 

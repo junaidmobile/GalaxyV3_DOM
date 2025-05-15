@@ -848,7 +848,7 @@ function CloseULD() {
                 'ULDType': uldType, 'ULDNo': uldNumber, 'ULDOwner': uldOwner.toUpperCase(),
                 'ULDSequenceNo': UldSeqNumber, 'AirportCity': AirportCity, 'ScaleWeight': $('#txtGrossWt').val(),
                 'ContourCode': contourCode, 'CompanyCode': window.localStorage.getItem("companyCode"), 'strUserID': window.localStorage.getItem("UserID"),
-                'FlightSeqNumber': FlightSeqNo, 'routepoint': $('#ddlOffPoint').find('option:selected').text(), 'ULDManpower': Manpower, 'Remark': '', 'Priority': $('#txtPriority').val(),
+                'FlightSeqNumber': FlightSeqNo, 'routepoint': $('#ddlOffPoint').find('option:selected').text(), 'ULDManpower': Manpower, 'Remark': '', 'Priority': $('#txtPriority').val(), 'ULDPosition': '0',
             }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -881,7 +881,8 @@ function CloseULD() {
             },
             error: function (msg) {
                 $("body").mLoading('hide');
-                $.alert('Some error occurred while saving data');
+                var r = jQuery.parseJSON(msg.responseText);
+                $.alert(r.Message);
             }
         });
         return false;
@@ -930,7 +931,7 @@ function CloseBulk() {
             data: JSON.stringify({
                 'ULDSequenceNo': trolleyldSeqNumber, 'AirportCity': AirportCity, 'ScaleWeight': $('#txtGrossWt').val(),
                 'CompanyCode': window.localStorage.getItem("companyCode"), 'strUserID': window.localStorage.getItem("UserID"),
-                'FlightSeqNumber': FlightSeqNo, 'routepoint': $('#ddlOffPoint').find('option:selected').text(), 'Priority': $('#txtPriority').val(),
+                'FlightSeqNumber': FlightSeqNo, 'routepoint': $('#ddlOffPoint').find('option:selected').text(), 'Priority': $('#txtPriority').val(), 'ULDManpower': '', 'Remark': "",
             }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -960,7 +961,8 @@ function CloseBulk() {
             },
             error: function (msg) {
                 $("body").mLoading('hide');
-                $.alert('Some error occurred while saving data');
+                var r = jQuery.parseJSON(msg.responseText);
+                $.alert(r.Message);
             }
         });
         return false;
